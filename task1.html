@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            background: url('https://source.unsplash.com/1600x900/?nature,technology') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .feature-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .feature-box h2 {
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Landing Page</h1>
+    </header>
+    <section class="hero">
+        <h1>Welcome to Our Website</h1>
+    </section>
+    <div class="container">
+        <section class="features">
+            <div class="feature-box">
+                <h2>Fast Performance</h2>
+                <p>Optimized code for the best experience.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Responsive Design</h2>
+                <p>Looks great on all devices.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Easy Customization</h2>
+                <p>Modify with simple HTML and CSS.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
